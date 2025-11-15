@@ -1,0 +1,15 @@
+# Ignore data folders
+data/
+
+# Ignore checkpoints and trained models
+ckpt/
+pseudo_label_scannet/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+
+# Ignore large output files
+*.npy
+*.npz
