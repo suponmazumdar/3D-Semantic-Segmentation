@@ -11,7 +11,7 @@ sudo apt install build-essential python3-dev libopenblas-dev
 conda env create -f env.yml
 conda activate growsp
 pip install -U MinkowskiEngine --install-option="--blas=openblas" -v --no-deps
-
+```
 ### 2.2 ScanNet
 Download the ScanNet dataset from [the official website](http://kaldir.vc.in.tum.de/scannet_benchmark/documentation). 
 You need to sign the terms of use. Uncompress the folder and move it to 
