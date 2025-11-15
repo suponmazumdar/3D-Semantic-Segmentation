@@ -108,9 +108,9 @@ class Scannettrain(Dataset):
         coords = np.floor(coords * scale)
         coords, feats, labels, unique_map, inverse_map = ME.utils.sparse_quantize(np.ascontiguousarray(coords), feats, labels=labels, ignore_label=-1, return_index=True, return_inverse=True)
 
-        if isinstance(coords, torch.Tensor): #changed by Rahul
+        if isinstance(coords, torch.Tensor): #changed by Supon
             coords = coords.numpy()
-        if isinstance(inverse_map, torch.Tensor):#changed by Rahul
+        if isinstance(inverse_map, torch.Tensor):#changed by Supon
             inverse_map = inverse_map.numpy()
 
         return coords, feats, labels, unique_map, inverse_map
@@ -235,9 +235,9 @@ class Scannetval(Dataset):
         scale = 1 / self.args.voxel_size
         coords = np.floor(coords * scale)
         coords, feats, labels, unique_map, inverse_map = ME.utils.sparse_quantize(np.ascontiguousarray(coords), feats, labels=labels, ignore_label=-1, return_index=True, return_inverse=True)
-        if isinstance(coords, torch.Tensor): #changed by Rahul
+        if isinstance(coords, torch.Tensor): #changed by Supon
             coords = coords.numpy()
-        if isinstance(inverse_map, torch.Tensor):#changed by Rahul
+        if isinstance(inverse_map, torch.Tensor):#changed by Supon
             inverse_map = inverse_map.numpy()
 
         return coords, feats, labels, unique_map, inverse_map
@@ -261,10 +261,10 @@ class Scannetval(Dataset):
 
         # # Remove the floor points from the original point cloud
         # scene_without_floor = pcd_down.select_by_index(inliers, invert=True)
-        # o3d.io.write_point_cloud("/data/home/user_rs/rahul22CS91F02/GrowSP-main/scene0000_00_without_floor.ply", scene_without_floor)
+        # o3d.io.write_point_cloud("/data/home/user_rs/Supon22CS91F02/GrowSP-main/scene0000_00_without_floor.ply", scene_without_floor)
         # # o3d.visualization.draw_geometries([scene_without_floor])
         # print('here..........................................')
-        # data = read_ply("/data/home/user_rs/rahul22CS91F02/GrowSP-main/scene0000_00_without_floor.ply")
+        # data = read_ply("/data/home/user_rs/Supon22CS91F02/GrowSP-main/scene0000_00_without_floor.ply")
         # # print(self.file[index])
 
 
