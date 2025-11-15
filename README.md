@@ -1,5 +1,5 @@
 # 3D Semantic Segmentation using MinkowskiEngine & ScanNet
- [The dataset can be downloaded from here](http://kaldir.vc.in.tum.de/scannet_benchmark/documentation)
+ 
   [We have also uploaded the code here ](https://github.com/suponmazumdar/3D-Semantic-Segmentation.git)
   1. Setup
 Setting up for this project involves installing dependencies. 
